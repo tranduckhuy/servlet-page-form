@@ -1,5 +1,7 @@
 me\duchuy\servletpageform\controller\Login.class
-me\duchuy\servletpageform\controller\ResultLogin.class
 me\duchuy\servletpageform\model\UserList.class
 me\duchuy\servletpageform\model\User.class
 me\duchuy\servletpageform\controller\CheckLogin.class
+me\duchuy\servletpageform\util\Email.class
+me\duchuy\servletpageform\controller\ResultLogin.class
+me\duchuy\servletpageform\util\Email$1.class

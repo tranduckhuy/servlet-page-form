@@ -30,19 +30,19 @@ public class CheckLogin extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        HttpSession session = request.getSession();
-
         if (username != null && !username.isEmpty() || password != null && !password.isEmpty()) {
             if (checkValidUser(username, password)) {
-                session.setAttribute("msg", "<h2>Đăng nhập thành công!</h2>");
+                HttpSession session = request.getSession();
+                session.setAttribute("username", username);
+                response.sendRedirect("./result-login");
             } else {
-                session.setAttribute("msg", "<h2>Đăng nhập thất bại!</h2>");
+                response.sendRedirect("./login");
             }
         } else {
-            session.setAttribute("msg", "<h2>Đăng nhập thất bại!</h2>");
+            response.sendRedirect("./login");
         }
 
-        response.sendRedirect("./result-login");
+        
     }
 
     private boolean checkValidUser(String username, String password) {

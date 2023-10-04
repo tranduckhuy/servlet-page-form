@@ -14,6 +14,7 @@ public class UserList {
         new User(2, "Submible", "ibn9823"),
         new User(3, "Kidshowa", "Unbina123"),
         new User(4, "Xonann29", "89238333"),
-        new User(5, "HJICKED", "CHECJKOL")
+        new User(5, "HJICKED", "CHECJKOL"),
+        new User(6, "admin", "123")
     );
 }
